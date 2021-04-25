@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Python Page</title>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <header>
+            About Python!
+        </header>
+        <ul>
+            <li><a href="#History" class="nav-link">History</a></li>
+            <li><a href="#Design_and_features" class="nav-link">Design and features</a></li>
+            <li><a href="#Syntax_and_semantics" class="nav-link">Syntax and semantics</a></li>
+            <li><a href="#Programming" class="nav-link">Programming</a></li>
+            <li><a href="#Libraries" class="nav-link">Libraries</a></li>
+            <li><a href="#Uses" class="nav-link">Uses</a></li>
+            <li><a href="#Wiki_link" class="nav-link">Wiki link</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="History">
+            <header>History</header>
+            <p>Python was conceived in the late 1980s by Guido van Rossum at Centrum Wiskunde & Informatica (CWI) in
+                the
+                Netherlands as a successor to ABC programming language, which was inspired by SETL, capable of
+                exception
+                handling and interfacing with the Amoeba operating system. Its implementation began in December 1989
+            </p>
+            <p>Van Rossum shouldered sole responsibility for the project, as the lead developer, until 12 July 2018,
+                when he announced his "permanent vacation" from his responsibilities as Python's Benevolent Dictator
+                For
+                Life, a title the Python community bestowed upon him to reflect his long-term commitment as the
+                project's chief decision-maker. He now shares his leadership as a member of a five-person steering
+                council. In January 2019, active Python core developers elected Brett Cannon, Nick Coghlan, Barry
+                Warsaw, Carol Willing and Van Rossum to a five-member "Steering Council" to lead the project. Guido
+                van
+                Rossum has since then withdrawn his nomination for the 2020 Steering counci</p>
+        </section>
+        <section class="main-section" id="Design_and_features">
+            <header>Design and features</header>
+            <p>Python is a multi-paradigm programming language. Object-oriented programming and structured
+                programming
+                are fully supported, and many of its features support functional programming and aspect-oriented
+                programming (including by metaprogramming and metaobjects (magic methods)). Many other paradigms are
+                supported via extensions, including design by contract and logic programming</p>
+            <p>The language's core philosophy is summarized in the document The Zen of Python (PEP 20), which
+                includes
+                aphorisms such as:</p>
+            <ul>
+                <li>Beautiful is better than ugly</li>
+                <li>Explicit is better than implicit</li>
+                <li>Simple is better than complex</li>
+                <li>Complex is better than complicated</li>
+                <li>Readability counts</li>
+            </ul>
+            <p>Rather than having all of its functionality built into its core, Python was designed to be highly
+                extensible (with modules). This compact modularity has made it particularly popular as a means of
+                adding
+                programmable interfaces to existing applications. Van Rossum's vision of a small core language with
+                a
+                large standard library and easily extensible interpreter stemmed from his frustrations with ABC,
+                which
+                espoused the opposite approach.</p>
+        </section>
+        <section class="main-section" id="Syntax_and_semantics">
+            <header>Syntax and semantics</header>
+            <p>Python is meant to be an easily readable language. Its formatting is visually uncluttered, and it
+                often
+                uses English keywords where other languages use punctuation. Unlike many other languages, it does
+                not
+                use curly brackets to delimit blocks, and semicolons after statements are allowed but are rarely, if
+                ever, used. It has fewer syntactic exceptions and special cases than C or Pascal.</p>
+            <h3>Indentation</h3>
+            <p>Python uses whitespace indentation, rather than curly brackets or keywords, to delimit blocks. An
+                increase in indentation comes after certain statements; a decrease in indentation signifies the end
+                of
+                the current block. Thus, the program's visual structure accurately represents the program's semantic
+                structure. This feature is sometimes termed the off-side rule, which some other languages share, but
+                in
+                most languages indentation doesn't have any semantic meaning. The recommended indent size is four
+                spaces.</p>
+        </section>
+        <section class="main-section" id="Programming">
+            <header>Programming</header>
+            <ul>
+                <li>
+                    <p>Hello world program:</p>
+                    <code>print('Hello, world!')</code>
+                </li>
+                <li>
+                    <p>Program to calculate the factorial of a positive integer:</p>
+                    <code>n = int(input('Type a number, and its factorial will be printed: ')) <br>
+
+                if n < 0: <br>
+                &nbsp;    raise ValueError('You must enter a non negative integer') <br>
+                
+                factorial = 1 <br>
+                for i in range(2, n + 1): <br>
+                &nbsp;    factorial *= i <br>
+                
+                print(factorial)</code>
+                </li>
+                </li>
+                <li>
+                    <p>Even-Odd Number Coading</p>
+                    <code>num = int(input("Enter a number: ")) <br>
+                if (num % 2) == 0: <br>
+                &nbsp;   print("{0} is Even".format(num)) <br>
+                else: <br>
+                &nbsp;   print("{0} is Odd".format(num))</code>
+                </li>
+            </ul>
+            <h3>Data structures Programming</h3>
+            <ul>
+                <li>
+                    <p>Start with a single node</p>
+                    <code>
+                        # A single node of a singly linked list <br>
+                        class Node: <br>
+                        # constructor <br>
+                        def __init__(self, data, next=None): <br>
+                        &nbsp;    self.data = data <br>
+                        &nbsp;    self.next = next <br><br>
+
+                        # Creating a single node <br>
+                        first = Node(3) <br>
+                        print(first.data) 
+                    </code>
+                </li>
+                <li>
+                    <p>Join nodes to get a linked list</p>
+                    <code>
+                        # A single node of a singly linked list <br>
+                        class Node: <br>
+                        # constructor <br>
+                        def __init__(self, data = None, next=None): <br>
+                        &nbsp;    self.data = data <br>
+                        &nbsp;    self.next = next <br><br>
+
+                        # A Linked List class with a single head node <br>
+                        class LinkedList: <br>
+                        def __init__(self):  <br>
+                        &nbsp;    self.head = None <br><br>
+
+                        # Linked List with a single node <br>
+                        LL = LinkedList() <br>
+                        LL.head = Node(3) <br>
+                        print(LL.head.data)
+                    </code>
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="Libraries">
+            <header>Libraries</header>
+            <p>Python's large standard library, commonly cited as one of its greatest strengths, provides tools
+                suited
+                to many tasks. For Internet-facing applications, many standard formats and protocols such as MIME
+                and
+                HTTP are supported. It includes modules for creating graphical user interfaces, connecting to
+                relational
+                databases, generating pseudorandom numbers, arithmetic with arbitrary-precision decimals,
+                manipulating
+                regular expressions, and unit testing.</p>
+            <p>Some parts of the standard library are covered by specifications (for example, the Web Server Gateway
+                Interface (WSGI) implementation wsgiref follows PEP 333), but most modules are not. They are
+                specified
+                by their code, internal documentation, and test suites. However, because most of the standard
+                library is
+                cross-platform Python code, only a few modules need altering or rewriting for variant
+                implementations.
+            </p>
+        </section>
+        <section class="main-section" id="Uses">
+            <header>Uses</header>
+            <p>Since 2003, Python has consistently ranked in the top ten most popular programming languages in the
+                TIOBE
+                Programming Community Index where, as of February 2021, it is the third most popular language
+                (behind
+                Java, and C). It was selected Programming Language of the Year (for "the highest rise in ratings in
+                a
+                year") in 2007, 2010, 2018, and 2020 (the only language to do so four times)</p>
+            <p>An empirical study found that scripting languages, such as Python, are more productive than
+                conventional
+                languages, such as C and Java, for programming problems involving string manipulation and search in
+                a
+                dictionary, and determined that memory consumption was often "better than Java and not much worse
+                than C
+                or C++".</p>
+            <p>Large organizations that use Python include Wikipedia, Google, Yahoo!, CERN, NASA, Facebook, Amazon,
+                Instagram, Spotify and some smaller entities like ILM and ITA. The social news networking site
+                Reddit
+                was written mostly in Python.</p>
+        </section>
+        <section class="main-section" id="Wiki_link">
+            <header>Wiki link</header>
+            <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank">Python(Wikipedia)</a>
+        </section>
+    </main>
+
+</body>
+
+</html>
